@@ -1,0 +1,118 @@
+.content {
+  position: absolute;
+  top: 0%;
+  transition: all 2s ease;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 10px;
+  .background {
+    position: absolute;
+    background: black;
+    opacity: 0.9;
+    width: 100%;
+    height: 100vh;
+  }
+  .form-container {
+    transition: all 2s ease;
+    position: relative;
+    z-index: 1;
+    border-radius: 7px;
+    // box-shadow: 2px 5px 10px 0px rgba(133, 130, 130, 0.534);
+    border: 1px solid rgba(212, 206, 206, 0.822);
+    background-color: #fff;
+    padding: 40px 0;
+    width: 500px;
+    height: 530px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    h4 {
+      margin: 0;
+      padding: 0;
+    }
+    .smarl {
+      color: #646464;
+      margin-bottom: 30px;
+      padding: 0;
+    }
+  }
+  .cancel {
+    color: rgba(12, 11, 11, 0.863);
+    font-size: 25px;
+    position: absolute;
+    top: 0;
+    margin: 0;
+    padding: 10px 10px;
+
+    line-height: 0;
+    right: 0;
+  }
+  form {
+    width: 90%;
+    font-size: 15px;
+    .form-group {
+      line-height: 50px;
+      margin: 0;
+      .check-box {
+        margin-right: 10px;
+        color: cornflowerblue;
+      }
+    }
+  }
+  button {
+    width: 100%;
+    background-color: $primary-color;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  .or-sign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 18px;
+    hr {
+      width: 150px;
+    }
+  }
+  .infos {
+    font-size: 15px;
+    text-align: center;
+    padding: 20px 0;
+    p {
+      margin: 10px 0;
+      padding: 0;
+      a {
+        &:hover {
+          text-decoration: none;
+          color: $primary-color;
+        }
+      }
+    }
+  }
+
+  .links {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .linkTo {
+      width: 90%;
+      margin: 0;
+      padding: 0;
+      .justify {
+        justify-content: center;
+        width: 100%;
+        ul {
+          justify-content: space-between;
+        }
+      }
+    }
+  }
+}

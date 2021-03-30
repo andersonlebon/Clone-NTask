@@ -1,0 +1,44 @@
+$primary-color: rgb(0, 150, 255);
+@mixin displaying($direction, $aligning) {
+  display: flex !important;
+  flex-direction: $direction !important;
+  justify-content: $aligning !important;
+  align-items: center !important;
+}
+.nav-bar {
+  width: 110%;
+  @include displaying(row, space-around);
+  padding: 10px 40px;
+  .navigation {
+    @include displaying(row, center);
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      @include displaying(row, center);
+      li {
+        padding: 0 25px;
+        a {
+          text-decoration: none;
+          color: rgba(0, 0, 0, 0.87) !important;
+          font-size: 1.1em;
+          font-weight: 520;
+          &:hover {
+            transition: all 0.5s ease 0s;
+            color: $primary-color !important;
+          }
+        }
+      }
+    }
+  }
+  .logo {
+    width: 120px;
+    height: 50px;
+  }
+  .buttons {
+    display: flex;
+    .button {
+      margin: 0 10px;
+    }
+  }
+}

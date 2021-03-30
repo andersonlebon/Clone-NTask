@@ -1,0 +1,97 @@
+.section-one {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  .allSides {
+    display: flex;
+    width: 80%;
+    padding-top: 7em;
+    .bg {
+      position: absolute;
+      left: -15%;
+      z-index: -1;
+    }
+    .sideOne {
+      width: 90%;
+      padding: 0;
+      margin: 0;
+      h1 {
+        font-weight: 999;
+        width: 300px;
+        font-size: 57px;
+      }
+      p {
+        color: #646464;
+        width: 400px;
+        padding: 17px 0;
+        font-size: 0.9em;
+      }
+
+      form {
+        width: 100%;
+        input {
+          padding: 0 20px;
+          margin-right: 10px;
+          height: 50px;
+          width: 60%;
+          border: 2px solid rgba(99, 97, 97, 0.336);
+          border-radius: 5px;
+          &:focus {
+            border: 2px solid rgba(99, 97, 97, 0.336);
+          }
+        }
+      }
+    }
+
+    .side-two {
+      z-index: -10;
+      position: relative;
+      margin: 0;
+      padding: 0;
+      .play {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 45%;
+        right: 50%;
+        border-radius: 50%;
+
+        background-color: #fff;
+        box-shadow: 0 1px 25px #4abf4e;
+        transition: background-color 0.3s;
+        img {
+          width: 60px;
+          height: 60px;
+          position: absolute;
+          top: 20%;
+          right: 17%;
+        }
+        &:hover {
+          cursor: pointer;
+          background-color: green !important;
+        }
+      }
+    }
+  }
+  .message {
+    background: $primary-color;
+    width: 60px;
+    z-index: 999;
+    height: 60px;
+    border-radius: 50% 5px 50% 50%;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+      line-height: 0;
+      font-size: 22px;
+      // transform: rotate(180deg);
+      color: #fff;
+      position: absolute;
+    }
+  }
+}
